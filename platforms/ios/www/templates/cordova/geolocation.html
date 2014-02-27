@@ -1,0 +1,22 @@
+<nav-page>
+    <nav-bar class="nav-title-slide-ios7"
+             type="bar-positive"
+             back-button-type="button-icon"
+             back-button-icon="icon ion-arrow-left-c">
+    </nav-bar>
+    <content has-header="true" scroll="false" padded="true">
+
+        <button class="button button-positive button-block" ng-click="getCurrentPosition()">Get Position</button>
+        <button class="button button-positive button-block" ng-click="watchPosition()" ng-hide="watching">Watch Position</button>
+        <button class="button button-positive button-block" ng-click="stopWatchingPosition()" ng-show="watching">Stop Watching Position</button>
+        <label>Latitude</label>{{position.coords.latitude}}<br/>
+        <label>Longitude:</label>{{position.coords.longitude}}<br/>
+        <label>Altitude:</label>{{position.coords.altitude}}<br/>
+        <label>Accuracy:</label>{{position.coords.accuracy}}<br/>
+        <label>Altitude Accuracy:</label>{{position.coords.altitudeAccuracy}}<br/>
+        <label>Heading:</label>{{position.coords.heading}}<br/>
+        <label>Speed:</label>{{position.coords.speed}}<br/>
+        <label>Timestamp:</label>{{position.timestamp}}<br/>
+        {{message}}
+    </content>
+</nav-page>

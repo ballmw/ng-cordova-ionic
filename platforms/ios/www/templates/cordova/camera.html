@@ -1,0 +1,26 @@
+<nav-page>
+    <nav-bar class="nav-title-slide-ios7"
+             type="bar-positive"
+             back-button-type="button-icon"
+             back-button-icon="icon ion-arrow-left-c">
+    </nav-bar>
+    <content has-header="true" scroll="false" padded="true">
+        <div class="button-bar">
+            <button class="button button-positive" ng-click="takePicture()">Camera</button>
+            <button class="button button-positive" ng-click="rollPicture()">Roll</button>
+        </div>
+
+        <div ng-if="showSlider">
+            <slide-box ng-show="showSlider">
+                <slide ng-repeat="image in images">
+                    <div class="card">
+                        <div class="item">
+                        <img style="width:50%" ng-src="{{image}}"/>
+
+                        </div>
+                    </div>
+                </slide>
+            </slide-box>
+        </div>
+    </content>
+</nav-page>

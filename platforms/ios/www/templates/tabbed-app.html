@@ -1,0 +1,24 @@
+<!-- Our navigation router with some animations set -->
+<pane nav-router animation="slide-left-right-ios7">
+    <!-- The nav bar that will be updated as we navigate -->
+
+    <!-- where the content of each page will be rendered -->
+    <ui-view name="content" animation="slide-left-right"></ui-view>
+
+
+    <div class="tabs tabs-dark tabs-icon-top">
+        <a class="tab-item" href="#home" ui-sref="tabbed.home" ui-sref-active="active">
+            <i class="icon ion-home"></i>
+            Home
+        </a>
+        <a class="tab-item" href="#cordova" ui-sref="tabbed.cordova" ui-sref-active="active">
+            <i class="icon ion-iphone"></i>
+            Cordova
+        </a>
+        <a class="tab-item" href="#about" ui-sref="tabbed.about" ui-sref-active="active">
+            <i class="icon ion-information"></i>
+            Settings
+        </a>
+    </div>
+
+</pane>

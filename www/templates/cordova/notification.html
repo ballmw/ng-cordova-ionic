@@ -1,0 +1,21 @@
+<nav-page>
+    <nav-bar class="nav-title-slide-ios7"
+             type="bar-positive"
+             back-button-type="button-icon"
+             back-button-icon="icon ion-arrow-left-c">
+    </nav-bar>
+    <content has-header="true" scroll="false" padded="true">
+        {{message}}
+
+        <button class="button button-positive button-block" ng-click="alert()">alert</button>
+
+        <button class="button button-positive button-block" ng-click="confirm()">confirm</button>
+
+        <button class="button button-positive button-block" ng-click="prompt()">prompt</button>
+
+        <button class="button button-positive button-block" ng-click="beep()">beep</button>
+
+        <button class="button button-positive button-block" ng-click="vibrate()">vibrate</button>
+
+    </content>
+</nav-page>

@@ -1,0 +1,19 @@
+<nav-page>
+    <nav-bar class="nav-title-slide-ios7"
+             type="bar-positive"
+             back-button-type="button-icon"
+             back-button-icon="icon ion-arrow-left-c">
+    </nav-bar>
+    <content has-header="true" scroll="false" padded="true">
+        <button class="button button-positive button-block" ng-click="getCurrentHeading()">Get Heading</button>
+        <button class="button button-positive button-block" ng-click="watchHeading()" ng-hide="watching">Watch Heading</button>
+        <button class="button button-positive button-block" ng-click="stopWatchingHeading()" ng-show="watching">Stop Watching Heading</button>
+
+        <label>Magnetic Heading</label>{{heading.magneticHeading}}<br/>
+        <label>True Heading</label>{{heading.trueHeading}}<br/>
+        <label>Heading Accuracy</label>{{heading.headingAccurracy}}<br/>
+        <label>timestamp</label>{{heading.timestamp}}<br/>
+
+        {{message}}
+    </content>
+</nav-page>

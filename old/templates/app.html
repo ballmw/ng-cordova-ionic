@@ -1,0 +1,63 @@
+
+<nav-page id="app-page">
+
+
+    <!--
+    Create tabs with an icon and text label, using the tabs-positive style (blue by default),
+    and disabling header title animation when switching tabs.
+    -->
+    <tabs tabs-style="tabs-icon-top" tabs-type="tabs-positive" animate-nav="false">
+        <tab title="Home" icon="icon ion-home" ng-controller="AppTabCtrl">
+            <content has-header="true" has-tabs="true">
+                Welcome.
+            </content>
+        </tab>
+
+        <tab title="Cordova" icon="icon ion-iphone" ng-controller="CordovaTabCtrl">
+            <content has-header="true" has-tabs="true">
+                <div class="list">
+
+                    <a href='#/home/accelerometer' class="item">Accelerometer - TODO</a>
+
+                    <a href='#/home/camera' class="item">Camera</a>
+
+                    <a href='#/home/capture' class="item">Capture</a>
+
+                    <a href='#/home/compass' class="item">Compass</a>
+
+                    <a href='#/home/contacts' class="item">Contacts - TODO</a>
+
+                    <a href='#/home/device' class="item">Device</a>
+
+                    <a href='#/home/events' class="item">Events - TODO</a>
+
+                    <a href='#/home/file' class="item">File - TODO</a>
+
+                    <a href='#/home/geolocation' class="item">Geolocation</a>
+
+                    <a href='#/home/globalization' class="item">Globalization - TODO</a>
+
+                    <a href='#/home/inappbrowser' class="item">In App Browser - TODO</a>
+
+                    <a href='#/home/media' class="item">Media - TODO</a>
+
+                    <a href='#/home/notification' class="item">Notification</a>
+                </div>
+
+            </content>
+        </tab>
+
+
+
+        <tab title="About" icon="icon ion-information" ng-controller="AboutTabCtrl">
+            <content has-header="true" has-tabs="true" padding="true">
+                <h3>About this app</h3>
+
+                <p>
+                    This is a sample seed project for the Ionic Framework. Please change it to match your needs.
+                </p>
+            </content>
+        </tab>
+
+    </tabs>
+</nav-page>
